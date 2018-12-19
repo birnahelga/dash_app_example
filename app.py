@@ -46,13 +46,18 @@ app.layout = html.Div(style={'backgroundColor': '#F5E6F6'},children=[
             'color': 'darkviolet'
         }),
     
-    html.H4('Graph 1: Scatterplot', 
-            style={
-            'color': 'darkviolet'
-        } ),
-
-    
     #First graph
+    
+    html.H4('Graph 1: Scatterplot', 
+        style={
+        'color': 'darkviolet'
+    } ),
+    
+    html.H5('Click on country name to deselect it', 
+        style={
+        'color': 'darkviolet'
+    } ),
+    
     html.Div([
         
         html.Div([
