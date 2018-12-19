@@ -9,7 +9,7 @@
 # * The first one will be a scatterplot with two DropDown boxes for the different indicators. It will have also a slide for the different years in the data. 
 # * The other graph will be a line chart with two DropDown boxes, one for the country and the other for selecting one of the indicators. (hint use Scatter object using mode = 'lines' [(more here)](https://plot.ly/python/line-charts/) 
 
-# In[6]:
+# In[40]:
 
 
 import dash
@@ -219,3 +219,4 @@ def update_graph(xaxis_column_name2, yaxis_column_name2,yaxis_type2):
 
 if __name__ == '__main__':
     app.run_server()
+
