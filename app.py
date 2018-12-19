@@ -40,7 +40,7 @@ available_year=df['TIME'].unique()
 
 app.layout = html.Div(style={'backgroundColor': '#F5E6F6'},children=[
     
-    html.H1('Final Project Dash - Birna Helga', 
+    html.H1('Final Project - Birna Helga', 
             style={
             'textAlign': 'center',
             'color': 'darkviolet'
@@ -183,7 +183,7 @@ def update_graph(xaxis_column_name1, yaxis_column_name1,
             hovermode='closest',
             plot_bgcolor='#F5E6F6',
             paper_bgcolor= '#F5E6F6',
-            title='Economic indicators for European countries',
+            title='The correlation of economic indicators for European countries',
             font={'color': 'darkviolet'}
         )
     }
