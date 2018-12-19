@@ -46,17 +46,19 @@ app.layout = html.Div(style={'backgroundColor': '#F5E6F6'},children=[
             'color': 'darkviolet'
         }),
     
+    
     #First graph
     
-    html.H4('Graph 1: Scatterplot', 
+    html.H4('Graph 1: Scatter plot', 
         style={
         'color': 'darkviolet'
     } ),
-    
+
     html.H5('Click on country name to deselect it', 
-        style={
-        'color': 'darkviolet'
-    } ),
+            style={
+            'color': 'darkviolet'
+        } ),
+
     
     html.Div([
         
@@ -177,10 +179,11 @@ def update_graph(xaxis_column_name1, yaxis_column_name1,
                 'type': 'linear',
                 'color':'darkviolet'
             },
-            margin={'l': 60, 'b': 60, 't': 10, 'r': 30},
+            margin={'l': 60, 'b': 60, 't': 30, 'r': 30},
             hovermode='closest',
             plot_bgcolor='#F5E6F6',
             paper_bgcolor= '#F5E6F6',
+            title='Economic indicators for European countries',
             font={'color': 'darkviolet'}
         )
     }
@@ -214,13 +217,14 @@ def update_graph(xaxis_column_name2, yaxis_column_name2,yaxis_type2):
                 'linecolor':'hotpink',
                 'color':'hotpink'
             },
-            margin={'l': 60, 'b': 60, 't': 10, 'r': 30},
+            margin={'l': 60, 'b': 60, 't': 30, 'r': 30},
             hovermode='closest',
             plot_bgcolor='#F5E6F6',
             paper_bgcolor= '#F5E6F6',
+            title='The evolution of economic indicators for a given European country',
+            font={'color': 'hotpink'}
         )
     }
 
 if __name__ == '__main__':
     app.run_server()
-
